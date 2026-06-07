@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageTurner - AI Engineered Bookstore</title>
+    <!-- Tailwind CSS CDN for utility styling -->
+    <script src="https://jsdelivr.net"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- 1. RESPONSIVE NAVIGATION -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">📚</span>
+                    <span class="font-bold text-xl tracking-tight text-indigo-600">PageTurner</span>
+                </div>
+                <!-- Search Bar - Responsive (hidden on mobile, visible on tablet/desktop) -->
+                <div class="hidden md:flex flex-1 max-w-md mx-8">
+                    <input type="text" placeholder="Search books by title, author, or genre..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm">
+                </div>
+                <!-- Cart Icon -->
+                <div class="flex items-center gap-4">
+                    <button class="relative p-2 text-gray-600 hover:text-indigo-600 transition-colors">
+                        <span class="text-xl">🛒</span>
+                        <span class="absolute top-0 right-0 bg-indigo-600 text-white text-xs font-bold rounded-full h-4 w-4 flex items-center justify-content-center">3</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO BANNER -->
+    <header class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-12 md:py-20 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-3xl md:text-5xl font-extrabold mb-4">Your Next Adventure Awaits</h1>
+            <p class="text-indigo-100 text-base md:text-lg mb-6">Explore thousands of titles selected and curated with the assistance of agentic design workflows.</p>
+            <button class="bg-white text-indigo-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-indigo-50 transition-all">Browse Collection</button>
+        </div>
+    </header>
+
+    <!-- 3. MAIN ECOMMERCE GRID -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 class="text-2xl font-bold mb-8 text-gray-800 border-b pb-2">Trending Books</h2>
+        
+        <!-- Grid automatically scales: 1 col on mobile, 2 on tablet, 4 on desktop -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Book Card 1 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow flex flex-col justify-between">
+                <div class="p-4 bg-gray-100 h-64 flex items-center justify-center">
+                    <span class="text-6xl select-none">🤖</span>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-indigo-600 bg-indigo-50 px-2 py-1 rounded">Technology</span>
+                        <h3 class="font-bold text-lg mt-2 text-gray-900 line-clamp-1">Designing with Agents</h3>
+                        <p class="text-gray-500 text-sm mt-1">by IBM BOB & Peers</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900">$29.99</span>
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-4 py-2 rounded-md transition-colors">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book Card 2 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow flex flex-col justify-between">
+                <div class="p-4 bg-gray-100 h-64 flex items-center justify-center">
+                    <span class="text-6xl select-none">🎨</span>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-purple-600 bg-purple-50 px-2 py-1 rounded">Design</span>
+                        <h3 class="font-bold text-lg mt-2 text-gray-900 line-clamp-1">Responsive UI Layouts</h3>
+                        <p class="text-gray-500 text-sm mt-1">by Sarah Jenkins</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900">$24.50</span>
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-4 py-2 rounded-md transition-colors">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book Card 3 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow flex flex-col justify-between">
+                <div class="p-4 bg-gray-100 h-64 flex items-center justify-center">
+                    <span class="text-6xl select-none">🐍</span>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-green-600 bg-green-50 px-2 py-1 rounded">Coding</span>
+                        <h3 class="font-bold text-lg mt-2 text-gray-900 line-clamp-1">Python from Scratch</h3>
+                        <p class="text-gray-500 text-sm mt-1">by Harry Vance</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900">$34.95</span>
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-4 py-2 rounded-md transition-colors">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book Card 4 -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow flex flex-col justify-between">
+                <div class="p-4 bg-gray-100 h-64 flex items-center justify-center">
+                    <span class="text-6xl select-none">🚀</span>
+                </div>
+                <div class="p-5 flex-1 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-amber-600 bg-amber-50 px-2 py-1 rounded">Business</span>
+                        <h3 class="font-bold text-lg mt-2 text-gray-900 line-clamp-1">Scaling eCommerce Fast</h3>
+                        <p class="text-gray-500 text-sm mt-1">by Alex Rivera</p>
+                    </div>
+                    <div class="mt-4 flex items-center justify-between">
+                        <span class="text-xl font-bold text-gray-900">$19.99</span>
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-4 py-2 rounded-md transition-colors">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 4. FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-800 mt-20">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+            <p>&copy; 2026 PageTurner Bookstore Front-end. Optimized using automated agentic review workflows.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
